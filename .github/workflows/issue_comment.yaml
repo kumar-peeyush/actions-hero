@@ -30,7 +30,7 @@ jobs:
           https://api.github.com/repo/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER/comments \
           -f body='
           Comment but from API call not action
-          '
+          '}
         env:
           GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
           ORGANIZATION: ${{ github.event.organisation.login }}
